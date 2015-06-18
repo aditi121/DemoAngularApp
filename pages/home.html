@@ -1,0 +1,36 @@
+<div ng-controller="CarouselDemoCtrl">
+  <div style="height: 305px">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{$index}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>
+<div ng-controller="mainController">
+<!--  Products Container  -->
+    <div class="list-group">
+      <!--  Product Container  -->
+      <div class="list-group-item" ng-repeat="product in products">
+        <div>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></div>
+
+        <!-- Image Gallery  -->
+        
+  <ul class="img-thumbnails clearfix">
+    <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+      <img ng-src="{{image}}" />
+    </li>
+  </ul>
+
+        <!-- Product Tabs  -->
+<!--        <product-tabs></product-tabs>
+-->      </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="trans">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+ <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/master.css" />
+  </head>
+
+<!-- define angular controller -->
+<body>
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Angular Routing Example</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">English</a>
+                            </li>
+                            <li>
+                                <a href="">Japanese</a>
+                            </li>
+                        </ul>
+                    </li>
+
+      </ul>
+    </div>
+</nav>
+    <div ng-view></div>
+  
+  <footer class="footer text-center">
+    <div class="container">
+   <div class="row"> <p>Footer</p></div>
+    </div>
+</footer>
+  <!-- SPELLS -->
+  <script src="js/jquery.js"></script>
+<script src="js/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular-cookies.js"></script>  
+<script src="js/angular-translate.min.js"></script>
+
+<script src="js/angular-route.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.13.0.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
